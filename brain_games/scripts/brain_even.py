@@ -5,10 +5,10 @@ from brain_games.scripts.brain_games import main as greeting
 
 def even(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    print('Question: ', end='')
     correct_counter = 0
     while correct_counter < 3:
         number = randint(1, 20)
+        print('Question: ', end='')
         print(number)
         if number % 2 == 0:
             correct_answer = 'yes'
