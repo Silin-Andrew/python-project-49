@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 from random import randint
 from brain_games.scripts.brain_games import main as greeting
+from prompt import string
+
+def iseven():
+    number = randint(1, 20)
+    print(f'Question: {number}')
+    if number % 2 == 0:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return correct_answer
 
 
-def even(name):
+def game(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_counter = 0
     while correct_counter < 3:
-        number = randint(1, 20)
-        print('Question: ', end='')
-        print(number)
-        if number % 2 == 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
-        # print(f'Correct answer {correct_answer}')
-        users_answer = input('Your answer: ')
+        correct_answer = iseven()
+        users_answer = string('Your answer: ')
         if users_answer == correct_answer:
             print('Correct!')
             correct_counter += 1
@@ -30,7 +33,7 @@ def even(name):
 
 def main():
     name = greeting()
-    even(name)
+    game(name)
 
 
 if __name__ == '__main__':

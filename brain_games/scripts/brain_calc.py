@@ -1,27 +1,29 @@
 #!/usr/bin/env python3
 from random import randint, choice
 from brain_games.scripts.brain_games import main as greeting
-import prompt
+from prompt import string
 
 
-def calc(name):
-    operations = ['-', '+', '*']
-    easy_interval =10
-    hard_interval = 50
+def calculating():
+    operation = choice(['-', '+', '*'])
+    if operation == "*":
+        end_of_range = 10
+    else:
+        end_of_range = 50
+    a = randint(2, end_of_range)
+    b = randint(2, end_of_range)
+    question = str(a) + ' ' + operation + ' ' + str(b)
+    print(f'Question: {question}')
+    correct_answer = str(eval(question))
+    return correct_answer 
+
+
+def game(name):
     print('What is the result of the expression?')
     correct_counter = 0
     while correct_counter < 3:
-        operation = choice(operations)
-        if operation == "*":
-            end = easy_interval
-        else:
-            end = hard_interval
-        a = randint(1, end)
-        b = randint(1, end)
-        question = str(a) + ' ' + operation + ' ' + str(b)
-        print(f'Question: {question}')
-        correct_answer = str(eval(question))
-        users_answer = prompt.string('Your answer: ')
+        correct_answer = calculating()
+        users_answer = string('Your answer: ')
         if users_answer == correct_answer:
             print('Correct!')
             correct_counter += 1
@@ -36,7 +38,7 @@ def calc(name):
 
 def main():
     name = greeting()
-    calc(name)
+    game(name)
 
 
 if __name__ == '__main__':
