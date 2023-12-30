@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randint, choice
 from brain_games.scripts.brain_games import main as greeting
-import brain_games.engine 
+import brain_games.engine
 
 PRE_QUESTION = 'What is the result of the expression?'
 
@@ -17,7 +17,7 @@ def solution():
     operation = f'{str(a)} {operation} {str(b)}'
     question = f'Question: {operation}'
     correct_answer = str(eval(operation))
-    return question, correct_answer   
+    return question, correct_answer
 
 
 def main():
@@ -26,4 +26,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()        
+    main()

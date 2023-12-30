@@ -6,6 +6,7 @@
 
 [stage 5] (https://asciinema.org/a/TXZuIoupxmiyRjr3P2mKUWddF) "brain-even game example"
 [stage 6] (https://asciinema.org/a/Ben6e5SXLGgcXUDMY8rfQCAFA) "brain-calc game example"
+[stage 7] (https://asciinema.org/a/0ZkguRdnxoJocIAFxAREn6vUO) "brain-gcd game example"
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Silin-Andrew/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Silin-Andrew/python-project-49/actions)
