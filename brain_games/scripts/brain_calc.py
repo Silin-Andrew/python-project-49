@@ -7,13 +7,14 @@ PRE_QUESTION = 'What is the result of the expression?'
 
 
 def solution():
+    min_number = 2
     operation = choice(['-', '+', '*'])
     if operation == "*":
-        end_of_range = 10
+        max_number = 10
     else:
-        end_of_range = 50
-    a = randint(2, end_of_range)
-    b = randint(2, end_of_range)
+        max_number = 50
+    a = randint(min_number, max_number)
+    b = randint(min_number, max_number)
     operation = f'{str(a)} {operation} {str(b)}'
     question = f'Question: {operation}'
     correct_answer = str(eval(operation))

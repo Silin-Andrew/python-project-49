@@ -46,8 +46,10 @@ def get_gcd(intersection):
 
 
 def solution():
-    num1 = randint(2, 50)
-    num2 = randint(2, 50)
+    min_number = 2
+    max_number = 50
+    num1 = randint(min_number, max_number)
+    num2 = randint(min_number, max_number)
     question = f'Question: {num1} {num2}'
     list1 = get_multipliers(num1)
     list2 = get_multipliers(num2)
