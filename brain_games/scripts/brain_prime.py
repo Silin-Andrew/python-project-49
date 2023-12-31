@@ -8,9 +8,9 @@ PRE_QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def solution():
-    min_number = 1
-    max_number = 100
-    number = randint(min_number, max_number)
+    MIN_NUMBER = 1
+    MAX_NUMBER = 100
+    number = randint(MIN_NUMBER, MAX_NUMBER)
     question = f'Question: {number}'
     multipliers = get_multipliers(number)
     if len(multipliers) == 1:

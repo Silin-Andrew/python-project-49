@@ -7,9 +7,9 @@ PRE_QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def solution():
-    min_number = 1
-    max_number = 20
-    number = randint(min_number, max_number)
+    MIN_NUMBER = 1
+    MAX_NUMBER = 20
+    number = randint(MIN_NUMBER, MAX_NUMBER)
     question = f'Question: {number}'
     if number % 2 == 0:
         correct_answer = 'yes'
