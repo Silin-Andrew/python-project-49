@@ -12,7 +12,7 @@
 
 [stage 8] (https://asciinema.org/a/qDnWfbolpIuLPpgzADWBNR6kO) "brain-progression game example"
 
-[stage 9] (<script src="https://asciinema.org/a/bJMOlPe5F4mFLY0Rl6fiJSOp3.js" id="asciicast-rW8HUnLgXVa8eJXt580KPuLVq" async></script>) "brain-prime game example"
+[stage 9] [![asciicast](https://asciinema.org/a/rW8HUnLgXVa8eJXt580KPuLVq.svg)](https://asciinema.org/a/rW8HUnLgXVa8eJXt580KPuLVq) "brain-prime game example"
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Silin-Andrew/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Silin-Andrew/python-project-49/actions)
