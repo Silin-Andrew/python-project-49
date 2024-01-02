@@ -4,15 +4,25 @@
 
 # asciinema demos
 
-[stage 5] (https://asciinema.org/a/TXZuIoupxmiyRjr3P2mKUWddF) "brain-even game example"
+"brain-even game example"
 
-[stage 6] (https://asciinema.org/a/Ben6e5SXLGgcXUDMY8rfQCAFA) "brain-calc game example"
+[![asciicast](https://asciinema.org/a/TXZuIoupxmiyRjr3P2mKUWddF.svg)](https://asciinema.org/a/TXZuIoupxmiyRjr3P2mKUWddF)
 
-[stage 7] (https://asciinema.org/a/0ZkguRdnxoJocIAFxAREn6vUO) "brain-gcd game example"
+"brain-calc game example"
 
-[stage 8] (https://asciinema.org/a/qDnWfbolpIuLPpgzADWBNR6kO) "brain-progression game example"
+[![asciicast](https://asciinema.org/a/Ben6e5SXLGgcXUDMY8rfQCAFA.svg)](https://asciinema.org/a/Ben6e5SXLGgcXUDMY8rfQCAFA)
 
-[stage 9] [![asciicast](https://asciinema.org/a/rW8HUnLgXVa8eJXt580KPuLVq.svg)](https://asciinema.org/a/rW8HUnLgXVa8eJXt580KPuLVq) "brain-prime game example"
+"brain-gcd game example"
+
+[![asciicast](https://asciinema.org/a/0ZkguRdnxoJocIAFxAREn6vUO.svg)](https://asciinema.org/a/0ZkguRdnxoJocIAFxAREn6vUO)
+
+"brain-progression game example"
+
+[![asciicast](https://asciinema.org/a/qDnWfbolpIuLPpgzADWBNR6kO.svg)](https://asciinema.org/a/qDnWfbolpIuLPpgzADWBNR6kO)
+
+"brain-prime game example"
+
+[![asciicast](https://asciinema.org/a/rW8HUnLgXVa8eJXt580KPuLVq.svg)](https://asciinema.org/a/rW8HUnLgXVa8eJXt580KPuLVq) 
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Silin-Andrew/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Silin-Andrew/python-project-49/actions)
