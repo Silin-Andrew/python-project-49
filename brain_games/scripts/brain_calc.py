@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from random import randint, choice
-from brain_games.scripts.brain_games import main as greeting
+from brain_games.scripts.brain_games import greeting
 import brain_games.engine
 
 PRE_QUESTION = 'What is the result of the expression?'

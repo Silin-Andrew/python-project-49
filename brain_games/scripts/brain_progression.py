@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.scripts.brain_games import main as greeting
+from brain_games.scripts.brain_games import greeting
 import brain_games.engine
 
 PRE_QUESTION = 'What number is missing in the progression?'

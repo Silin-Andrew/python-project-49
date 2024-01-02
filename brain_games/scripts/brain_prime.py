@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
 from brain_games.scripts.brain_gcd import get_multipliers
-from brain_games.scripts.brain_games import main as greeting
+from brain_games.scripts.brain_games import greeting
 import brain_games.engine
 
 PRE_QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'

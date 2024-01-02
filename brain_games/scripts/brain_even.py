@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.scripts.brain_games import main as greeting
+from brain_games.scripts.brain_games import greeting
 import brain_games.engine
 
 PRE_QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
