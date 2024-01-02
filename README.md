@@ -6,11 +6,11 @@
 
 "brain-even game example"
 
-[![asciicast](https://asciinema.org/a/TXZuIoupxmiyRjr3P2mKUWddF.svg)](https://asciinema.org/a/TXZuIoupxmiyRjr3P2mKUWddF)
+[![asciicast](https://asciinema.org/a/aXDny38CGuIWbah5nKSJKf82l.svg)](https://asciinema.org/a/aXDny38CGuIWbah5nKSJKf82l)
 
 "brain-calc game example"
 
-[![asciicast](https://asciinema.org/a/Ben6e5SXLGgcXUDMY8rfQCAFA.svg)](https://asciinema.org/a/Ben6e5SXLGgcXUDMY8rfQCAFA)
+[![asciicast](https://asciinema.org/a/wRtIxgA5RYDxmAJ9SR5OgPLXQ.svg)](https://asciinema.org/a/wRtIxgA5RYDxmAJ9SR5OgPLXQ)
 
 "brain-gcd game example"
 
