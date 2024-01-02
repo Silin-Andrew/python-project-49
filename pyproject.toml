@@ -6,7 +6,7 @@ authors = ["Andrey Silin <andronikus@yandex.ru>"]
 readme = "README.md"
 repository = "https://github.com/Silin-Andrew/python-project-49"
 classifiers = [
-  "Programming Language :: Python :: 3.11"
+  "Programming Language :: Python :: 3.11",
   "Framework :: Flake8"
 ]
 packages = [
