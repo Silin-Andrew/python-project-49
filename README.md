@@ -30,14 +30,28 @@
 
 # installation
 
-```Before installation, make sure that you have already installed:
-* python ^3.11
+Before installation, make sure that you have already installed:
+* python 3
 * pip ^19
 * poetry ^1.2.0
 * git
 * make
 
-```
+For installation run the commands in a terminal window:
+1. _Сlone this repository:_  git clone https://github.com/Silin-Andrew/python-project-49.git
+2. _Go to a new folder:_  cd python-project-49
+3. _Install project dependencies:_  make install
+4. _Build package:_  make build
+5. _Install package:_  make package-install
+
+Done!
+
+Start any game with a command:
+* brain-even
+* brain-calc
+* brain-gcd
+* brain-progression
+* brain-prime
 
 
 ### Hexlet tests and linter status:
