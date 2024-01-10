@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games import greeting
 from brain_games.games.gcd import PRE_QUESTION, solution
 import brain_games.engine
 
 
+
 def main():
-    user_name = greeting()
-    brain_games.engine.game(PRE_QUESTION, solution, user_name)
+    brain_games.engine.game(PRE_QUESTION, solution)
 
 
 if __name__ == '__main__':
