@@ -5,11 +5,11 @@ from brain_games.scripts.brain_games import greeting
 user_name = greeting()
 
 
-def game(PRE_QUESTION, solution):
-    print(PRE_QUESTION)
+def run(game):
+    print(game.PRE_QUESTION)
     correct_counter = 0
     while correct_counter < 3:
-        question, correct_answer = solution()
+        question, correct_answer = game.solution()
         print(question)
         users_answer = string('Your answer: ')
         if users_answer == correct_answer:

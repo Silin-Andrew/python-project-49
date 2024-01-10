@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.even import PRE_QUESTION, solution
+from brain_games.games import even
 import brain_games.engine
 
 
 def main():
-    brain_games.engine.game(PRE_QUESTION, solution)
+    brain_games.engine.run(even)
 
 
 if __name__ == '__main__':
