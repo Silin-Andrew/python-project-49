@@ -18,13 +18,16 @@ def get_multipliers(number):
     return multipliers
 
 
+def is_prime(number):
+    return len(get_multipliers(number)) == 1
+
+
 def solution():
     MIN_NUMBER = 1
     MAX_NUMBER = 100
     number = randint(MIN_NUMBER, MAX_NUMBER)
     question = f'Question: {number}'
-    multipliers = get_multipliers(number)
-    if len(multipliers) == 1:
+    if is_prime(number):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
