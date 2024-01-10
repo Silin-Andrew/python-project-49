@@ -3,6 +3,8 @@ from brain_games.scripts.brain_games import greeting
 
 
 user_name = greeting()
+
+
 def game(PRE_QUESTION, solution):
     print(PRE_QUESTION)
     correct_counter = 0
