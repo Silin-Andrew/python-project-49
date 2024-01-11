@@ -1,7 +1,12 @@
 from random import randint
 
-
 PRE_QUESTION = 'Find the greatest common divisor of given numbers.'
+MIN_NUMBER = 2
+MAX_NUMBER = 50
+
+
+def get_number():
+    return randint(MIN_NUMBER, MAX_NUMBER)
 
 
 def get_multipliers(number):
@@ -44,10 +49,8 @@ def get_gcd(intersection):
 
 
 def solution():
-    MIN_NUMBER = 2
-    MAX_NUMBER = 50
-    num1 = randint(MIN_NUMBER, MAX_NUMBER)
-    num2 = randint(MIN_NUMBER, MAX_NUMBER)
+    num1 = get_number()
+    num2 = get_number()
     question = f'Question: {num1} {num2}'
     list1 = get_multipliers(num1)
     list2 = get_multipliers(num2)

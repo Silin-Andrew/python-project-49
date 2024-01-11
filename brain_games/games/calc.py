@@ -12,7 +12,7 @@ def solution():
         MAX_NUMBER = 50
     a = randint(MIN_NUMBER, MAX_NUMBER)
     b = randint(MIN_NUMBER, MAX_NUMBER)
-    operation = f'{str(a)} {operation} {str(b)}'
-    question = f'Question: {operation}'
-    correct_answer = str(eval(operation))
+    expression = f'{str(a)} {operation} {str(b)}'
+    question = f'Question: {expression}'
+    correct_answer = str(eval(expression))
     return question, correct_answer

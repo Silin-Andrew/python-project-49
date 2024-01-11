@@ -1,6 +1,12 @@
 from random import randint
 
 PRE_QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
+
+def get_number():
+    return randint(MIN_NUMBER, MAX_NUMBER)
 
 
 def get_multipliers(number):
@@ -23,9 +29,7 @@ def is_prime(number):
 
 
 def solution():
-    MIN_NUMBER = 1
-    MAX_NUMBER = 100
-    number = randint(MIN_NUMBER, MAX_NUMBER)
+    number = get_number()
     question = f'Question: {number}'
     if is_prime(number):
         correct_answer = 'yes'
