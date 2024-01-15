@@ -1,12 +1,14 @@
 from prompt import string
 from brain_games.scripts.brain_games import greeting
 
+NUMBER_OF_ROUNDS = 3
+
 
 def run(game):
     user_name = greeting()
     print(game.PRE_QUESTION)
     correct_counter = 0
-    while correct_counter < 3:
+    while correct_counter < NUMBER_OF_ROUNDS:
         question, correct_answer = game.get_question_and_correct_answer()
         print(f'Question: {question}')
         users_answer = string('Your answer: ')
