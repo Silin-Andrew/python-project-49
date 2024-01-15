@@ -13,6 +13,6 @@ def solution():
     a = randint(MIN_NUMBER, MAX_NUMBER)
     b = randint(MIN_NUMBER, MAX_NUMBER)
     expression = f'{str(a)} {operation} {str(b)}'
-    question = f'Question: {expression}'
+    question = expression
     correct_answer = str(eval(expression))
     return question, correct_answer

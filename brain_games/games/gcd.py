@@ -51,7 +51,7 @@ def get_gcd(intersection):
 def solution():
     num1 = get_number()
     num2 = get_number()
-    question = f'Question: {num1} {num2}'
+    question = f'{num1} {num2}'
     list1 = get_multipliers(num1)
     list2 = get_multipliers(num2)
     short_list, long_list = compare_lists(list1, list2)

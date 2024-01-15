@@ -30,7 +30,7 @@ def is_prime(number):
 
 def solution():
     number = get_number()
-    question = f'Question: {number}'
+    question = number
     if is_prime(number):
         correct_answer = 'yes'
     else:

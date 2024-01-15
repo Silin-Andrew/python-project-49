@@ -32,7 +32,7 @@ def get_correct_answer(progression):
 
 def get_question(progression, hidden_index):
     progression[hidden_index] = '..'
-    question = 'Question: '
+    question = ''
     for element in progression:
         question += str(element) + ' '
     return question

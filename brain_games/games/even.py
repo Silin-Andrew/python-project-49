@@ -15,7 +15,7 @@ def is_even(number):
 
 def solution():
     number = get_number()
-    question = f'Question: {number}'
+    question = number
     if is_even(number):
         correct_answer = 'yes'
     else:

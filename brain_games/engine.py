@@ -10,7 +10,7 @@ def run(game):
     correct_counter = 0
     while correct_counter < 3:
         question, correct_answer = game.solution()
-        print(question)
+        print(f'Question: {question}')
         users_answer = string('Your answer: ')
         if users_answer == correct_answer:
             print('Correct!')
