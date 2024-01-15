@@ -28,7 +28,7 @@ def is_prime(number):
     return len(get_multipliers(number)) == 1
 
 
-def solution():
+def get_question_and_correct_answer():
     number = get_number()
     question = number
     if is_prime(number):

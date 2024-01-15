@@ -7,7 +7,7 @@ def run(game):
     print(game.PRE_QUESTION)
     correct_counter = 0
     while correct_counter < 3:
-        question, correct_answer = game.solution()
+        question, correct_answer = game.get_question_and_correct_answer()
         print(f'Question: {question}')
         users_answer = string('Your answer: ')
         if users_answer == correct_answer:

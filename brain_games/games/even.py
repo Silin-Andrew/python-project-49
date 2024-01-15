@@ -13,7 +13,7 @@ def is_even(number):
     return number % 2 == 0
 
 
-def solution():
+def get_question_and_correct_answer():
     number = get_number()
     question = number
     if is_even(number):

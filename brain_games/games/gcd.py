@@ -48,7 +48,7 @@ def get_gcd(intersection):
     return gcd
 
 
-def solution():
+def get_question_and_correct_answer():
     num1 = get_number()
     num2 = get_number()
     question = f'{num1} {num2}'

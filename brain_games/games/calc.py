@@ -3,7 +3,7 @@ from random import randint, choice
 PRE_QUESTION = 'What is the result of the expression?'
 
 
-def solution():
+def get_question_and_correct_answer():
     MIN_NUMBER = 2
     operation = choice(['-', '+', '*'])
     if operation == "*":

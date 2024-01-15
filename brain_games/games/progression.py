@@ -38,7 +38,7 @@ def get_question(progression, hidden_index):
     return question
 
 
-def solution():
+def get_question_and_correct_answer():
     start, step = get_parameters()
     progression = get_progression(start, step, PROGRESSION_LENGTH)
     correct_answer, hidden_index = get_correct_answer(progression)
