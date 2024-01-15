@@ -2,10 +2,8 @@ from prompt import string
 from brain_games.scripts.brain_games import greeting
 
 
-user_name = greeting()
-
-
 def run(game):
+    user_name = greeting()
     print(game.PRE_QUESTION)
     correct_counter = 0
     while correct_counter < 3:
