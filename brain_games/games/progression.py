@@ -1,33 +1,21 @@
 from random import randint
 
 PRE_QUESTION = 'What number is missing in the progression?'
-MIN_START = 1
-MAX_START = 15
-MIN_STEP = 2
-MAX_STEP = 9
+MIN_INITIAL_TERM = 1
+MAX_INITIAL_TERM = 15
+MIN_COMMON_DIFFERENCE = 2
+MAX_COMMON_DIFFERENCE = 9
 PROGRESSION_LENGTH = 10
 
 
-def get_parameters():
-    start = randint(MIN_START, MAX_START)
-    step = randint(MIN_STEP, MAX_STEP)
-    return start, step
-
-
-def get_progression(start, step, length):
-    progression = [start,]
+def get_progression(initial_term, common_difference, length):
+    progression = [initial_term]
     index = 1
     while index <= length - 1:
-        start += step
-        progression.append(start)
+        initial_term += common_difference
+        progression.append(initial_term)
         index += 1
     return progression
-
-
-def get_correct_answer(progression):
-    hidden_index = randint(0, len(progression) - 1)
-    correct_answer = str(progression[hidden_index])
-    return correct_answer, hidden_index
 
 
 def get_question(progression, hidden_index):
@@ -39,8 +27,10 @@ def get_question(progression, hidden_index):
 
 
 def get_question_and_correct_answer():
-    start, step = get_parameters()
-    progression = get_progression(start, step, PROGRESSION_LENGTH)
-    correct_answer, hidden_index = get_correct_answer(progression)
+    initial_term = randint(MIN_INITIAL_TERM, MAX_INITIAL_TERM)
+    common_difference = randint(MIN_COMMON_DIFFERENCE, MAX_COMMON_DIFFERENCE)
+    progression = get_progression(initial_term, common_difference, PROGRESSION_LENGTH)
+    hidden_index = randint(0, PROGRESSION_LENGTH - 1)
+    correct_answer = str(progression[hidden_index])
     question = get_question(progression, hidden_index)
     return question, correct_answer
