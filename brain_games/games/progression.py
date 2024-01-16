@@ -29,7 +29,8 @@ def get_question(progression, hidden_index):
 def get_question_and_correct_answer():
     initial_term = randint(MIN_INITIAL_TERM, MAX_INITIAL_TERM)
     common_difference = randint(MIN_COMMON_DIFFERENCE, MAX_COMMON_DIFFERENCE)
-    progression = get_progression(initial_term, common_difference, PROGRESSION_LENGTH)
+    progression = get_progression(initial_term, common_difference,
+                                  PROGRESSION_LENGTH)
     hidden_index = randint(0, PROGRESSION_LENGTH - 1)
     correct_answer = str(progression[hidden_index])
     question = get_question(progression, hidden_index)
