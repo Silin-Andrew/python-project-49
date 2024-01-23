@@ -9,52 +9,18 @@ def get_number():
     return randint(MIN_NUMBER, MAX_NUMBER)
 
 
-def get_multipliers(number):
-    multipliers = []
-    max_multiplier = int(number ** (1 / 2))
-    multiplier = 2
-    while multiplier <= max_multiplier:
-        if number % multiplier == 0:
-            multipliers.append(multiplier)
-            number = number / multiplier
+def get_gcd_euclid(a, b):
+    while a != 0 and b != 0:
+        if a > b:
+            a = a % b
         else:
-            multiplier += 1
-    if number != 1:
-        multipliers.append(int(number))
-    return multipliers
-
-
-def compare_lists(list1, list2):
-    if len(list1) > len(list2):
-        short_list, long_list = list2, list1
-    else:
-        short_list, long_list = list1, list2
-    return short_list, long_list
-
-
-def get_intersection(short_list, long_list):
-    intersection = []
-    for item in short_list:
-        if item in long_list:
-            intersection.append(item)
-            long_list.remove(item)
-    return intersection
-
-
-def get_gcd(intersection):
-    gcd = 1
-    for item in intersection:
-        gcd *= item
-    return gcd
+            b = b % a
+    return a + b
 
 
 def get_question_and_correct_answer():
     num1 = get_number()
     num2 = get_number()
     question = f'{num1} {num2}'
-    list1 = get_multipliers(num1)
-    list2 = get_multipliers(num2)
-    short_list, long_list = compare_lists(list1, list2)
-    intersection = get_intersection(short_list, long_list)
-    correct_answer = str(get_gcd(intersection))
+    correct_answer = str(get_gcd_euclid(num1, num2))
     return question, correct_answer
