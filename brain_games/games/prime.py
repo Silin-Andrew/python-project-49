@@ -9,23 +9,15 @@ def get_number():
     return randint(MIN_NUMBER, MAX_NUMBER)
 
 
-def get_multipliers(number):
-    multipliers = []
+def is_prime(number):
     max_multiplier = int(number ** (1 / 2))
     multiplier = 2
     while multiplier <= max_multiplier:
         if number % multiplier == 0:
-            multipliers.append(multiplier)
-            number = number / multiplier
+            return False
         else:
             multiplier += 1
-    if number != 1:
-        multipliers.append(int(number))
-    return multipliers
-
-
-def is_prime(number):
-    return len(get_multipliers(number)) == 1
+    return True
 
 
 def get_question_and_correct_answer():
